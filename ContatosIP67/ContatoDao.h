@@ -14,6 +14,8 @@
 @property (strong, readonly) NSMutableArray *contatos;
 
 - (void) adicionaContato: (Contato *)contato;
+- (Contato *)buscaContatoDaPosicao: (NSInteger)posicao;
+- (void) removeContatoDaPosicao: (NSInteger)posicao;
 
 + (id) contatoDaoInstance;
 

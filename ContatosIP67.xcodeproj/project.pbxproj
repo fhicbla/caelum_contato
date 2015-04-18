@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9D29532B1AE298DA006A2BE9 /* ListaContatosViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D29532A1AE298DA006A2BE9 /* ListaContatosViewController.m */; };
 		9DDED5971AD98D8E00F7695A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9DDED5961AD98D8E00F7695A /* main.m */; };
 		9DDED59A1AD98D8E00F7695A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9DDED5991AD98D8E00F7695A /* AppDelegate.m */; };
 		9DDED59D1AD98D8E00F7695A /* ContatosIP67.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 9DDED59B1AD98D8E00F7695A /* ContatosIP67.xcdatamodeld */; };
@@ -30,6 +31,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		9D2953291AE298DA006A2BE9 /* ListaContatosViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ListaContatosViewController.h; sourceTree = "<group>"; };
+		9D29532A1AE298DA006A2BE9 /* ListaContatosViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ListaContatosViewController.m; sourceTree = "<group>"; };
 		9DDED5911AD98D8E00F7695A /* ContatosIP67.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ContatosIP67.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9DDED5951AD98D8E00F7695A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9DDED5961AD98D8E00F7695A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -93,15 +96,17 @@
 				9DDED5991AD98D8E00F7695A /* AppDelegate.m */,
 				9DDED59E1AD98D8E00F7695A /* FormularioContatoViewController.h */,
 				9DDED59F1AD98D8E00F7695A /* FormularioContatoViewController.m */,
+				9DDED5C01AD9A24800F7695A /* Contato.h */,
+				9DDED5C11AD9A24800F7695A /* Contato.m */,
 				9DDED5C31AD9ACBD00F7695A /* ContatoDao.h */,
 				9DDED5C41AD9ACBD00F7695A /* ContatoDao.m */,
+				9D2953291AE298DA006A2BE9 /* ListaContatosViewController.h */,
+				9D29532A1AE298DA006A2BE9 /* ListaContatosViewController.m */,
 				9DDED5A11AD98D8E00F7695A /* Main.storyboard */,
 				9DDED5A41AD98D8E00F7695A /* Images.xcassets */,
 				9DDED5A61AD98D8E00F7695A /* LaunchScreen.xib */,
 				9DDED59B1AD98D8E00F7695A /* ContatosIP67.xcdatamodeld */,
 				9DDED5941AD98D8E00F7695A /* Supporting Files */,
-				9DDED5C01AD9A24800F7695A /* Contato.h */,
-				9DDED5C11AD9A24800F7695A /* Contato.m */,
 			);
 			path = ContatosIP67;
 			sourceTree = "<group>";
@@ -234,6 +239,7 @@
 			files = (
 				9DDED5C21AD9A24800F7695A /* Contato.m in Sources */,
 				9DDED59A1AD98D8E00F7695A /* AppDelegate.m in Sources */,
+				9D29532B1AE298DA006A2BE9 /* ListaContatosViewController.m in Sources */,
 				9DDED59D1AD98D8E00F7695A /* ContatosIP67.xcdatamodeld in Sources */,
 				9DDED5C51AD9ACBD00F7695A /* ContatoDao.m in Sources */,
 				9DDED5A01AD98D8E00F7695A /* FormularioContatoViewController.m in Sources */,
@@ -430,6 +436,7 @@
 				9DDED5B91AD98D8E00F7695A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		9DDED5BA1AD98D8E00F7695A /* Build configuration list for PBXNativeTarget "ContatosIP67Tests" */ = {
 			isa = XCConfigurationList;
@@ -438,6 +445,7 @@
 				9DDED5BC1AD98D8E00F7695A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
