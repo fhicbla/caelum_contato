@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		9D29532B1AE298DA006A2BE9 /* ListaContatosViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D29532A1AE298DA006A2BE9 /* ListaContatosViewController.m */; };
+		9D7AB32D1AEC22C600143BE7 /* GerenciadorDeAcoes.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D7AB32C1AEC22C600143BE7 /* GerenciadorDeAcoes.m */; };
 		9DDED5971AD98D8E00F7695A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9DDED5961AD98D8E00F7695A /* main.m */; };
 		9DDED59A1AD98D8E00F7695A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9DDED5991AD98D8E00F7695A /* AppDelegate.m */; };
 		9DDED59D1AD98D8E00F7695A /* ContatosIP67.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 9DDED59B1AD98D8E00F7695A /* ContatosIP67.xcdatamodeld */; };
@@ -33,6 +34,8 @@
 /* Begin PBXFileReference section */
 		9D2953291AE298DA006A2BE9 /* ListaContatosViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ListaContatosViewController.h; sourceTree = "<group>"; };
 		9D29532A1AE298DA006A2BE9 /* ListaContatosViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ListaContatosViewController.m; sourceTree = "<group>"; };
+		9D7AB32B1AEC22C600143BE7 /* GerenciadorDeAcoes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GerenciadorDeAcoes.h; sourceTree = "<group>"; };
+		9D7AB32C1AEC22C600143BE7 /* GerenciadorDeAcoes.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GerenciadorDeAcoes.m; sourceTree = "<group>"; };
 		9DDED5911AD98D8E00F7695A /* ContatosIP67.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ContatosIP67.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9DDED5951AD98D8E00F7695A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9DDED5961AD98D8E00F7695A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -102,6 +105,8 @@
 				9DDED5C41AD9ACBD00F7695A /* ContatoDao.m */,
 				9D2953291AE298DA006A2BE9 /* ListaContatosViewController.h */,
 				9D29532A1AE298DA006A2BE9 /* ListaContatosViewController.m */,
+				9D7AB32B1AEC22C600143BE7 /* GerenciadorDeAcoes.h */,
+				9D7AB32C1AEC22C600143BE7 /* GerenciadorDeAcoes.m */,
 				9DDED5A11AD98D8E00F7695A /* Main.storyboard */,
 				9DDED5A41AD98D8E00F7695A /* Images.xcassets */,
 				9DDED5A61AD98D8E00F7695A /* LaunchScreen.xib */,
@@ -243,6 +248,7 @@
 				9DDED59D1AD98D8E00F7695A /* ContatosIP67.xcdatamodeld in Sources */,
 				9DDED5C51AD9ACBD00F7695A /* ContatoDao.m in Sources */,
 				9DDED5A01AD98D8E00F7695A /* FormularioContatoViewController.m in Sources */,
+				9D7AB32D1AEC22C600143BE7 /* GerenciadorDeAcoes.m in Sources */,
 				9DDED5971AD98D8E00F7695A /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

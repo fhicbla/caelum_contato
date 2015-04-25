@@ -39,4 +39,8 @@ static ContatoDao *defaultDao = nil;
     [self.contatos removeObjectAtIndex:posicao];
 }
 
+- (NSInteger)buscaPosicaoDoContato:(Contato *)contato {
+    return [self.contatos indexOfObject:contato];
+}
+
 @end
