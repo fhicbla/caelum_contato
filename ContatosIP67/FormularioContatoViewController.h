@@ -10,6 +10,7 @@
 #import "Contato.h"
 #import "ContatoDao.h"
 #import "FormularioContatoViewController.h"
+#import <CoreLocation/CoreLocation.h>
 
 @protocol FormularioContatoViewControllerDelegate <NSObject>
 
@@ -18,13 +19,16 @@
 
 @end
 
-@interface FormularioContatoViewController : UIViewController
+@interface FormularioContatoViewController : UIViewController<UINavigationControllerDelegate, UIImagePickerControllerDelegate, UIActionSheetDelegate>
 
 @property IBOutlet UITextField *nome;
 @property IBOutlet UITextField *telefone;
 @property IBOutlet UITextField *email;
 @property IBOutlet UITextField *endereco;
 @property IBOutlet UITextField *site;
+@property (weak, nonatomic) IBOutlet UIButton *botaoFoto;
+@property (weak, nonatomic) IBOutlet UITextField *latitude;
+@property (weak, nonatomic) IBOutlet UITextField *longitude;
 
 @property (strong) ContatoDao *contatoDao;
 @property (strong) Contato *contato;
@@ -33,6 +37,7 @@
 
 - (void)pegaDadosDoFormulario;
 - (void)criaContato;
+- (IBAction)selecionaFoto:(id)sender;
 
 @end
 
