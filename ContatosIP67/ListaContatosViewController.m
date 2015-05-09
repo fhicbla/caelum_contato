@@ -51,6 +51,7 @@
 
 - (NSInteger) tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
     return [self.dao.contatos count];
+    
 }
 
 - (UITableViewCell *) tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
@@ -83,17 +84,15 @@
 }
 
 - (void)viewDidAppear:(BOOL)animated {
-    if (self.linhaDestaque >= 0 && self.dao.contatos.count > 0) {
+    if (self.linhaDestaque >= 0 && [self.dao.contatos count] > 0) {
         NSIndexPath *indexPath = [NSIndexPath
                                   indexPathForRow:self.linhaDestaque inSection:0];
         [self.tableView
             selectRowAtIndexPath:indexPath animated:YES
             scrollPosition:UITableViewScrollPositionNone];
-        [self.tableView
-            scrollToRowAtIndexPath:indexPath
-            atScrollPosition:UITableViewScrollPositionNone animated:YES];
-        
-        self.linhaDestaque = -1;
+        //[self.tableView
+        //    scrollToRowAtIndexPath:indexPath
+        //    atScrollPosition:UITableViewScrollPositionNone animated:YES];
     }
 }
 
