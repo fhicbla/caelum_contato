@@ -107,7 +107,13 @@
                                 <state key="normal" backgroundImage="gps.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="buscarCoordenadas:" destination="BYZ-38-t0r" eventType="touchUpInside" id="7gW-3s-Icx"/>
+                                </connections>
                             </button>
+                            <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" hidesWhenStopped="YES" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="bh1-vF-NSZ">
+                                <rect key="frame" x="303" y="254" width="20" height="20"/>
+                            </activityIndicatorView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
@@ -117,6 +123,7 @@
                         <outlet property="email" destination="BZS-kv-HLh" id="lYN-fG-AYG"/>
                         <outlet property="endereco" destination="v0s-Ta-emK" id="N04-f6-bU9"/>
                         <outlet property="latitude" destination="pB3-4s-dSY" id="TNP-lZ-BPp"/>
+                        <outlet property="loading" destination="bh1-vF-NSZ" id="9Hv-3F-Tl9"/>
                         <outlet property="longitude" destination="3aZ-Z1-YEd" id="5r7-IX-L0p"/>
                         <outlet property="nome" destination="bU5-df-5Ci" id="AUH-zn-hMX"/>
                         <outlet property="site" destination="l7E-mz-bYq" id="HbQ-5A-Mgp"/>

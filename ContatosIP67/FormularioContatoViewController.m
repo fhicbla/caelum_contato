@@ -41,6 +41,8 @@
         self.email.text = self.contato.email;
         self.endereco.text = self.contato.endereco;
         self.site.text = self.contato.site;
+        self.latitude.text = [NSString stringWithFormat: @"%@",self.contato.latitude];
+        self.longitude.text = [NSString stringWithFormat: @"%@", self.contato.longitude];
         self.contato.latitude = [NSNumber numberWithFloat: [self.latitude.text floatValue]];
         self.contato.longitude = [NSNumber numberWithFloat:[self.longitude.text floatValue]];
         
@@ -138,7 +140,9 @@
     [self presentViewController:picker animated:YES completion:nil];
 }
 
-- (void)buscarCoordenadas:(id)sender {
+- (IBAction)buscarCoordenadas:(UIButton *)botao {
+    botao.hidden = YES;
+    [self.loading startAnimating];
     CLGeocoder *geocoder = [CLGeocoder new];
     [geocoder geocodeAddressString: self.endereco.text completionHandler:^(NSArray *resultados, NSError *error) {
         if (error == nil && [resultados count] > 0) {
@@ -146,7 +150,11 @@
             CLLocationCoordinate2D coordenada = resultado.location.coordinate;
             self.latitude.text = [NSString stringWithFormat:@"%f", coordenada.latitude];
             self.longitude.text = [NSString stringWithFormat:@"%f", coordenada.longitude];
+        } else {
+            NSLog(@"Erro: %@ Resultados: %@", error, resultados);
         }
+        [self.loading stopAnimating];
+        botao.hidden = NO;
     }];
 }
 

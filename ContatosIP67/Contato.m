@@ -11,7 +11,7 @@
 @implementation Contato
 
 - (NSString *)description {
-    return [NSString stringWithFormat:@"Nome: %@, Telefone: %@, Email: %@, Endereço: %@, Site: %@", self.nome, self.telefone, self.email, self.endereco, self.site];
+    return [NSString stringWithFormat:@"Nome: %@, Telefone: %@, Email: %@, Endereço: %@, Site: %@, Latitude: %@, Longitude: %@", self.nome, self.telefone, self.email, self.endereco, self.site, self.latitude, self.longitude];
 }
 
 @end
